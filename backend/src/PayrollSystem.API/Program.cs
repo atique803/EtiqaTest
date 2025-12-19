@@ -1,3 +1,5 @@
+using PayrollSystem.Application.Interfaces;
+using PayrollSystem.Application.Services;
 using PayrollSystem.Domain.Interfaces;
 using PayrollSystem.Infrastructure.Data;
 using PayrollSystem.Infrastructure.Repositories;
@@ -17,6 +19,9 @@ var connectionString = builder.Configuration.GetConnectionString("DefaultConnect
 builder.Services.AddSingleton<IDbConnectionFactory>(sp => new DbConnectionFactory(connectionString));
 builder.Services.AddScoped<IEmployeeRepository, EmployeeRepository>();
 builder.Services.AddScoped<ISkillsetRepository, SkillsetRepository>();
+
+// Register application services
+builder.Services.AddScoped<IEmployeeService, EmployeeService>();
 
 // Add CORS
 builder.Services.AddCors(options =>
