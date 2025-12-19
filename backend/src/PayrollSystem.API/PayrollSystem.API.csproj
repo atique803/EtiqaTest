@@ -8,12 +8,14 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.13" />
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="6.1.3" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="10.0.1" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\PayrollSystem.Application\PayrollSystem.Application.csproj" />
     <ProjectReference Include="..\PayrollSystem.Infrastructure\PayrollSystem.Infrastructure.csproj" />
+    <ProjectReference Include="..\PayrollSystem.Domain\PayrollSystem.Domain.csproj" />
   </ItemGroup>
 
 </Project>
