@@ -300,3 +300,6 @@ yarn-error.log*
 # Temporary files
 *.tmp
 *.temp
+
+# Assessment file
+ASSESSMENT.md
