@@ -43,8 +43,6 @@ backend/
 │   ├── PayrollSystem.Application/      # DTOs, Services, Business Logic
 │   ├── PayrollSystem.Infrastructure/   # Repositories, Data Access, Migrations
 │   └── PayrollSystem.API/              # Controllers, Program.cs, Configuration
-└── tests/
-    └── PayrollSystem.Tests/
 
 frontend/
 ├── src/
@@ -386,18 +384,11 @@ Birthday Bonus = 1 day × 2 × Daily Rate (if birthday falls in period)
 
 ## 🧪 Testing
 
-### Run Backend Tests
-
-```bash
-cd backend/tests/PayrollSystem.Tests
-dotnet test
-```
-
-### Test API with Swagger
+Test the API using Swagger UI:
 
 1. Navigate to http://localhost:5211/swagger
-2. Use the interactive UI to test endpoints
-3. All DTOs and responses are documented
+2. Use the interactive UI to test all endpoints
+3. All DTOs and responses are fully documented
 
 ---
 
